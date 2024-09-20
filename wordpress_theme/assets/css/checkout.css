@@ -1,0 +1,299 @@
+/*=============== Billing ====================================================================================================================================================================*/
+
+.billing {
+    background-color: #fff;
+}
+
+.billing-wrapper {
+    padding-top: 90px;
+}
+
+.billing-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.billing-form__details {
+    max-width: 430px;
+    width: 100%;
+    margin-right: 40px;
+}
+
+.billing-form__details .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 -10px;
+}
+
+.billing-form__details .row:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.billing-form__details .block {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.billing-form__details .block label {
+    display: block;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.billing-form__details .block input {
+    border-radius: 10px;
+    border: 1px solid #9f9f9f;
+    background: #fff;
+    width: 100%;
+    padding: 15px 10px;
+}
+
+.billing-form__details .block select {
+    border-radius: 10px;
+    border: 1px solid #9f9f9f;
+    background: #fff;
+    width: 100%;
+    padding: 15px 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg width='35' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M2 0L7 5L12 0L14 1L7 8L0 1L2 0Z' fill='black'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+.billing-form__product {
+    max-width: 530px;
+    width: 100%;
+}
+
+.billing-details__title {
+    color: #000;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 35px;
+}
+
+.billing-product__info {
+    color: #000;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.billing-product__info b {
+    font-weight: 700;
+}
+
+.billing-product__submit {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.billing-product__submit button {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #000;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    -webkit-transition: color 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+    transition: color 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+    transition: color 0.3s ease 0s, transform 0.3s ease 0s;
+    transition: color 0.3s ease 0s, transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+.billing-product__submit button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    -webkit-transition: width 0.3s ease 0s;
+    transition: width 0.3s ease 0s;
+    pointer-events: none;
+}
+
+.billing-product__submit button:hover {
+    color: #fff;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.billing-product__submit button:hover:before {
+    left: 0;
+    width: 100%;
+}
+
+.billing-product__submit button:active {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.billing-table {
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 20px;
+}
+
+.billing-table .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.billing-table__name {
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.billing-table__list {
+    padding: 0;
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.billing-table__item {
+    margin: 20px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.billing-table__heading {
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.billing-table__heading span {
+    color: #9f9f9f;
+    font-weight: 400;
+}
+
+.billing-table__subtotal {
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.billing-table__total {
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.billing-table__total span {
+    color: #b88e2f;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*=============== /Billing ====================================================================================================================================================================*/
+
+@media (max-width: 767.98px) {
+    .billing-wrapper {
+        padding-top: 50px;
+    }
+
+    .billing-form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .billing-form__details {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .billing-form__details .block label {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .billing-form__details .block input {
+        padding: 12px 10px;
+    }
+
+    .billing-form__details .block select {
+        padding: 12px 10px;
+    }
+
+    .billing-details__title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .billing-product__info {
+        margin-bottom: 30px;
+    }
+
+    .billing-product__submit {
+        max-width: 220px;
+    }
+
+    .billing-product__submit button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .billing-table .row {
+        margin-bottom: 10px;
+    }
+
+    .billing-table__name {
+        font-size: 22px;
+    }
+
+    .billing-table__total span {
+        font-size: 22px;
+    }
+}

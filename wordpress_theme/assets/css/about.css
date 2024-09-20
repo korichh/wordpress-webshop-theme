@@ -1,0 +1,107 @@
+/*=============== About ====================================================================================================================================================================*/
+
+.about {
+    background-color: #fff;
+}
+
+.about-wrapper {
+    padding-top: 80px;
+}
+
+.about-content {
+    font-size: 25px;
+    line-height: normal;
+}
+
+.about-content p {
+    margin: 1.5rem 0;
+}
+
+.about-address {
+    margin-bottom: 40px;
+}
+
+.about-address__list {
+    padding: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.about-address__item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 33.333%;
+    flex: 1 1 33.333%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.about-item__image {
+    margin-bottom: 10px;
+}
+
+.about-item__content {
+    max-width: 300px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.about-item__heading {
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.about-item__text {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-item__text a {
+    color: #000;
+    text-decoration: none;
+}
+
+/*=============== /About ====================================================================================================================================================================*/
+
+@media (max-width: 991.98px) {
+    .about-wrapper {
+        padding-top: 50px;
+    }
+
+    .about-content p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .about-wrapper {
+        padding-top: 30px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+    }
+}
